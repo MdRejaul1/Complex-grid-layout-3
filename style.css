@@ -1,0 +1,69 @@
+
+* {box-sizing: border-box}
+body {
+  margin: 20px;
+  background: #fff;
+  font-family: "Century Gothic", helvetica, arial, sans-serif;
+  font-size: 1.2em;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "nav"
+                         "header"
+                         "title" 
+                         "."
+                         "."
+                         "."
+                         "footer";
+    grid-gap: .5rem;
+  }
+
+  header {
+    grid-area: header;
+  }
+  nav {
+    grid-area: nav;
+  }
+  .title {
+    grid-area: title;
+  }
+  article {
+   
+  }
+  footer {
+    grid-area: footer;
+  }
+
+
+
+  div, nav, section, article, aside, header, footer, main, h2 {
+	padding: 1rem;
+	color: #fff;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+nav {
+	background: dodgerblue;
+}
+section {
+	background: hotpink;
+}
+h2 {
+  background: orange;
+  margin: 0;
+}
+aside {
+  background: olivedrab;
+}
+header {
+  background: gray;
+}
+article {
+  background: olivedrab;
+}
+footer {
+  background: crimson;
+}
